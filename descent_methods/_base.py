@@ -1,7 +1,6 @@
 """
 Abstract base class for descent optimizers
 """
-
 import abc
 import typing as tp
 from inspect import signature, _empty

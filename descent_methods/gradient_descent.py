@@ -2,7 +2,11 @@
 This module contains utilities for performing gradient descent on a function
 """
 import numpy as np
+import os
+from descent_methods._functions import F4 as F
+from descent_methods._utils import surface_plot, fvalue_3D, param_plot
 from descent_methods._base import BaseDescentOptimizer
+import matplotlib.pyplot as plt
 
 
 class GradientDescentOptimizer(BaseDescentOptimizer):
@@ -63,17 +67,15 @@ class GradientDescentOptimizer(BaseDescentOptimizer):
         return self._parameters
 
 
-if __name__ == '__main__':
+
+def main():
     np.random.seed(1)
-    from descent_methods._functions import F4 as F
-    from descent_methods._utils import surface_plot, fvalue_3D, param_plot
+
     f, g = F.f, F.g
 
-    import matplotlib.pyplot as plt
     optim = GradientDescentOptimizer(f, g, alpha=0.2, initial_point=(0.8, 0.8))
     for i in range(500):
         optim.step()
-
 
     fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
 
@@ -82,10 +84,9 @@ if __name__ == '__main__':
     plt.title('Gradient Descent')
     plt.show()
 
-
     learning_rates = (0.25, 0.2, 0.1, 0.01)
 
-    fig, axs = plt.subplots(2,2)
+    fig, axs = plt.subplots(2, 2)
     for i, alpha in enumerate(learning_rates):
         ax = axs.flat[i]
 
@@ -100,5 +101,8 @@ if __name__ == '__main__':
 
     plt.suptitle("Gradient Descent Learning Rates\nx^2 + 4y^2")
     plt.show()
+
+
+
 
 
