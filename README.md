@@ -65,3 +65,30 @@ The following algorithms are planned to be added:
     - DPLL
     - CDCL
 
+
+# Examples
+
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/newton_descent_ellipse.png)
+
+Newtonian Descent for the fastest path to the global minimum of a convex function.
+
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/gradient_descent_ellipse_alpha=0.1.png)
+
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/gradient_descent_ellipse_alpha=0.01.png)
+
+The effect of the learning rate alpha on Gradient Descent
+
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/simulated_annealing_dropwave.png)
+
+Simulated Annealing stochastic search finds the global minimum by randomly sampling and accepting some percentage of suboptimal points
+to get out of local minimums.
+
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/crossentropy_dropwave_[-5, -5].png)
+
+Crossentropy Search generates samples from a distribution, chooses a subsection of the most minimizing samples, fits the new distribution to those samples, and repeats.
+
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/crossentropy_dropwave_[-5, -5].png)
+
+Search Gradient computes the derivate of the function with respect to a distribution and performs gradient descent on the distribution parameters.
+
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/crossentropy_dropwave_[-5, -5].png)
