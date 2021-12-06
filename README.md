@@ -1,7 +1,10 @@
 # PySOP
 
-![alt text]()
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/gradient_descent_bowl.png)
 
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/search_gradient_dropwave.png)
+
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/gridworld_a_star.png)
 
 Here is a collection of Python implementations of various search and optimization algorithms. The main purpose of the repo is to:
 
