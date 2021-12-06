@@ -15,9 +15,9 @@ Here is a collection of Python implementations of various search and optimizatio
 
 # Installation
 
-python >= 3.8
-numpy >= 1.2
-matplotlib >= 3.4
+- python >= 3.8
+- numpy >= 1.2
+- matplotlib >= 3.4
 
 You can run the following command from the terminal to install:
 
@@ -87,8 +87,8 @@ to get out of local minimums.
 
 Crossentropy Search generates samples from a distribution, chooses a subsection of the most minimizing samples, fits the new distribution to those samples, and repeats.
 
-![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/crossentropy_dropwave_[-5, -5].png)
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/search_gradient_dropwave.png)
+
 
 Search Gradient computes the derivate of the function with respect to a distribution and performs gradient descent on the distribution parameters.
 
-![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/search_gradient_dropwave.png)
