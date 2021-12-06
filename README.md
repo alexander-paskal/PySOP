@@ -91,4 +91,4 @@ Crossentropy Search generates samples from a distribution, chooses a subsection 
 
 Search Gradient computes the derivate of the function with respect to a distribution and performs gradient descent on the distribution parameters.
 
-![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/crossentropy_dropwave_[-5, -5].png)
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/search_gradient_dropwave.png)
