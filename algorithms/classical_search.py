@@ -20,7 +20,6 @@ functions
 import math
 
 
-
 def djikstra(graph, start, end, cost):
     """
     Performs djikstra's algorithm to find shortest path from start to end in some graph
