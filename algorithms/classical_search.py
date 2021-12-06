@@ -24,11 +24,12 @@ import math
 def djikstra(graph, start, end, cost):
     """
     Performs djikstra's algorithm to find shortest path from start to end in some graph
+    :param graph: a Dict mapping states to Lists of children
     :param start: the state at which to start
     :param end: the state at which to end
     :param cost: a function(start, state) returning the cost from start to state
-    :return: the path, a list of states from start to finish
-    :return:
+    :return: path, a List of states from start to finish
+    :return: explored, a Set of states that have been visited by the algorithm
     """
     frontier = Queue([start], key=lambda x: cost(start, x))
     explored = set()
@@ -63,13 +64,13 @@ def a_star(graph, start, end, cost, heuristic):
     Performs A* search from start to end state to find the optimal route. Variation of
     Djikstra's algorithm that employs use of a cost AND a heuristic function so choose which value
     to explore next
-    :param graph: an adjacency list, specifically a dictionary mapping states to a list of their children. Null values
-    should be empty lists
+    :param graph: a Dict mapping states to Lists of children
     :param start: the state at which to start
     :param end: the state at which to end
-    :param cost: a function(start, state) returning the cost from start to state
-    :param heuristic: a function(state, end) returning the cost from state to end
-    :return: the path, a list of states from start to finish
+    :param cost: a function(state, state) returning the cost of between two states
+    :param heuristic: a function(state, state) for calculating the heuristic value between two states
+    :return: path, a List of states from start to finish
+    :return: explored, a Set of states that have been visited by the algorithm
     """
 
     frontier = Queue([start], key=lambda x: cost(start, x) + heuristic(x, end))
@@ -116,11 +117,11 @@ def minimax(graph, state, depth, reward, maxplayer=True):
     """
     Performs minimax on a 2-player adversarial graph. Returns the values of each of the possible actions from
     the provided state
-    :param graph:
-    :param state:
-    :param depth:
-    :param reward:
-    :return:
+    :param graph: a Dict mapping states to Lists of children
+    :param state: a hashable representation of a state
+    :param depth: an Integer for the depth of search to perform
+    :param reward: a Function(state) that returns some numeric value
+    :return: results, the a Dict mapping children states to their respective values. The "optimal" policy at the provided state would correspond to the argmax of results
     """
     results = {}
     for child in graph[state]:
