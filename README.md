@@ -101,4 +101,7 @@ Djikstra's algorithm explores nodes with the next lowest cost in a frontier set,
 
 A* expands outwards but ranks potential nodes by both their cost and a heuristic function (manhattan distance from the goal node, in the case of gridworld). 
 
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/val_it_plot0.png)
+![alt text](https://github.com/alexander-paskal/PySOP/blob/main/visualizations/images/val_it_plot5.png)
 
+Value Iteration for a Markov Decision Process (MDP) will converge to a unique optimal solution no matter where the initial values are set.
