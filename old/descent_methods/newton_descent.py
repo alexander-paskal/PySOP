@@ -2,7 +2,7 @@
 this module contains utilities for performing newton descent on a function
 """
 import numpy as np
-from descent_methods._base import BaseDescentOptimizer
+from old.descent_methods._base import BaseDescentOptimizer
 
 
 class NewtonDescentOptimizer(BaseDescentOptimizer):
@@ -64,8 +64,8 @@ class NewtonDescentOptimizer(BaseDescentOptimizer):
 
 
 if __name__ == '__main__':
-    from descent_methods._functions import F1, F2
-    from descent_methods._utils import param_plot
+    from old.descent_methods._functions import F1, F2
+    from old.descent_methods._utils import param_plot
     import matplotlib.pyplot as plt
 
     fig, axs = plt.subplots(1,2)

@@ -1,5 +1,5 @@
 # TODO fix gd_momentum
-from descent_methods.gradient_descent import GradientDescentOptimizer
+from old.descent_methods.gradient_descent import GradientDescentOptimizer
 
 
 class GDMomentum(GradientDescentOptimizer):
@@ -34,8 +34,8 @@ class GDMomentum(GradientDescentOptimizer):
 if __name__ == '__main__':
     import numpy as np
     np.random.seed(1)
-    from descent_methods._functions import F4 as F
-    from descent_methods._utils import surface_plot, fvalue_3D, param_plot
+    from old.descent_methods._functions import F4 as F
+    from old.descent_methods._utils import surface_plot, fvalue_3D, param_plot
     f, g = F.f, F.g
 
     import matplotlib.pyplot as plt

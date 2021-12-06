@@ -48,6 +48,7 @@ def function_plot(f, parameters, ax):
     :return:
     :rtype:
     """
+
     fvalues = [f(*param) for param in parameters]
     result = ax.scatter()
     return result

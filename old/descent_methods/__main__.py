@@ -10,7 +10,7 @@ def cli():
 
 @cli.command()
 def gradient_descent():
-    from descent_methods.gradient_descent import main
+    from old.descent_methods.gradient_descent import main
     main()
 
 

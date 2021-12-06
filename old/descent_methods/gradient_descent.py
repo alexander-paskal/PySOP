@@ -2,10 +2,9 @@
 This module contains utilities for performing gradient descent on a function
 """
 import numpy as np
-import os
-from descent_methods._functions import F4 as F
-from descent_methods._utils import surface_plot, fvalue_3D, param_plot
-from descent_methods._base import BaseDescentOptimizer
+from old.descent_methods._functions import F4 as F
+from old.descent_methods._utils import surface_plot, fvalue_3D, param_plot
+from old.descent_methods._base import BaseDescentOptimizer
 import matplotlib.pyplot as plt
 
 
